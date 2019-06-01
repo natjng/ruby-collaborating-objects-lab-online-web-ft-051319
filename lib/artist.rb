@@ -35,8 +35,8 @@ class Artist
 
     found_arist = @@all.find{ |artist| artist.name == name}
     if found_arist == nil
-      new_artist = self.new(name)
-      new_artist.save
+      new_artist.save = self.new(name)
+      #new_artist.save
       new_artist
     else
       found_arist
