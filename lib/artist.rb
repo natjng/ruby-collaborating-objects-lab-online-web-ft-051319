@@ -37,6 +37,7 @@ class Artist
     if found_arist == nil
       new_artist = self.new(name)
       new_artist.save
+      new_artist
     else
       found_arist
     end
