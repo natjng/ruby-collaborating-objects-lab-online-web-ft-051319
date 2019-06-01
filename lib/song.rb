@@ -22,7 +22,7 @@ class Song
   # end
   
   def artist_name=(artist)
-    artist_obj.save = Artist.find_or_create_by_name(artist)
+    artist_obj = Artist.find_or_create_by_name(artist)
     self.artist = artist_obj
     artist_obj.add_song(self)
   end
