@@ -42,8 +42,7 @@ class Song
     
     filename_arr = filename.split(" - ")
     song = self.new(filename_arr[1])
-    @artist = song.artist_name=(filename_arr[0])
-    @artist.save
+    song.artist_name=(filename_arr[0])
     song
     
     # file_array = filename.split(" - ")
